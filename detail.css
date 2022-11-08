@@ -154,7 +154,7 @@ nav {
 
 .dropdown-item {
   display: flex;
-  justify-content: space-between;
+  justify-content: spnunitoace-between;
 }
 
 .dropdown-menu {
@@ -704,6 +704,7 @@ nav {
 
 
 /* modal */
+.modalreview
 .modal {
   display: none;
   position: fixed;
