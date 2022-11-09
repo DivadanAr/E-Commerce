@@ -185,6 +185,7 @@ nav {
 
 .other-product {
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 16.5px;
   margin-top: 4%;
@@ -704,7 +705,7 @@ nav {
 
 
 /* modal */
-.modalreview
+.modalreview,
 .modal {
   display: none;
   position: fixed;
@@ -719,6 +720,7 @@ nav {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.modalreview-content,
 .modal-content {
   background-color: #fefefe;
   margin: auto;
@@ -727,7 +729,7 @@ nav {
   width: 800px;
   height: 700px;
 }
-
+.modalreview-content
 .modal-content .product {
   margin: auto 0px;
 }
@@ -824,6 +826,7 @@ nav {
   }
 
   .other-product {
+    align-items: center;
     display: flex;
     justify-content: center;
     gap: 16.5px;

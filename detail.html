@@ -96,13 +96,21 @@
       <div class="content">
         <div class="product">
           <div class="main-product">
-            <img src="assets/web1.jpg" alt="" id="product1">
+            <img src="assets/web1.jpg" alt="" id="main-product" onclick="prev(this)">
           </div>
           <div class="other-product">
-            <img src="assets/web2.jpg" alt="" id="product2">
-            <img src="assets/web3.jpg" alt="" id="product3">
-            <img src="assets/web4.jpg" alt="" id="product4">
-            <img src="assets/web1.jpg" alt="" id="product5">
+            <div class="prev">
+              <img src="assets/web1.jpg" alt="">
+            </div>
+            <div class="prev">
+              <img src="assets/web2.jpg" alt="">
+            </div>
+            <div class="prev">
+              <img src="assets/web3.jpg" alt="">
+            </div>
+            <div class="prev">
+              <img src="assets/web4.jpg" alt="">
+            </div>
           </div>
         </div>
         <div class="description">
@@ -118,7 +126,7 @@
                 <i class="fa fa-star rating-color"></i>
                 <i class="fa fa-star"></i>
               </div>
-              <h5 class="review-count">(12 sold)</h5>
+              <h5 class="review-count">(12 product)</h5>
             </div>
           </div>
           <div class="price">
@@ -142,7 +150,7 @@
                 <p>Seller's Name</p>
               </div>
               <div class="other">
-                <button>Visit Shop <i class="fa-solid fa-shop"></i></button>
+                <button id="btn-review">Visit Shop <i class="fa-solid fa-shop"></i></button>
               </div>
             </div>
           </div>
@@ -424,33 +432,32 @@
         </div>
         <div class="product">
           <div class="main-modal">
-            <!-- <div class="btn-preview">
+            <!-- <div class="modal-prev">
               <button><i class="fa-solid fa-caret-left"></i></button>
             </div> -->
             <div class="modal-product">
-              <img src="assets/web1.jpg" alt="" id="modal1">
+              <img src="" alt="" id="main-modal">
             </div>
-            <!-- <div class="btn-next">
+            <!-- <div class="modal-next">
               <button><i class="fa-solid fa-caret-right"></i></button>
             </div> -->
           </div>
           <div class="other-modal">
-            <img src="assets/web1.jpg" alt="" id="modal2">
-            <img src="assets/web2.jpg" alt="" id="modal3">
-            <img src="assets/web3.jpg" alt="" id="modal4">
-            <img src="assets/web4.jpg" alt="" id="modal5">
+            <img src="assets/web1.jpg" alt="" class="coba">
+            <img src="assets/web2.jpg" alt="" class="coba">
+            <img src="assets/web3.jpg" alt="" class="coba">
+            <img src="assets/web4.jpg" alt="" class="coba">
           </div>
         </div>
       </div>
     </div>
     <!-- end modal -->
     <!-- modal -->
-    <div id="myModal" class="modalreview">
+    <div id="myRev" class="modalreview">
 
-      <!-- Modalreview content -->
       <div class="modalreview-content">
         <div class="header">
-          <span class="close">&times;</span>
+          <span class="close close-rev">&times;</span>
         </div>
         <div class="review-modal">
 
