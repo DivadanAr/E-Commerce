@@ -23,6 +23,7 @@ nav {
   height: 7vh;
   position: fixed;
   top: 0;
+  z-index: 99;
 }
 
 .navbar {
@@ -287,6 +288,7 @@ nav {
   padding: 10px 20px;
   border-top: solid black 0.5px;
   margin: 0px auto;
+  box-sizing: border-box;   
 }
 .details-product{
   display: flex;
@@ -361,10 +363,11 @@ font-size: 18px;
 }
 .type{
   background-color: #77A4FF;
-  padding: 5px 15px;
+  padding: 8px 15px;
   border-radius: 5px;
   color: white;
   font-size: 14px;
+
 }
 .favs button{
   position: relative;
@@ -393,10 +396,11 @@ font-size: 18px;
   font-size: 20px;
   font-weight: 700;
   margin-left: -69%;
+
 }
 .card-summary .product{
   line-height: 10px;
-  border-top: #000 solid 1px;
+  border-top: #000 solid 0.5px;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.503);
 }
 .card-summary .product button{
@@ -453,4 +457,286 @@ font-size: 18px;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 1.5px;
+}
+
+/* end content */
+
+@media (max-width: 1240px) {
+  .nav-link {
+    margin-top: -8px;
+    padding: 8px 7px;
+  }
+
+  .nav-link i {
+    font-size: 16px;
+  }
+
+  .nav-link img {
+    width: 30px;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description {
+    width: 100%;
+    padding-left: 0px;
+    margin: 50px auto;
+    border: none;
+  }
+
+  .other-product {
+    display: flex;
+    justify-content: center;
+    gap: 16.5px;
+    margin: 4% 0px;
+  }
+
+  .main-product {
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-product img {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .info-product p {
+    width: 100%;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .related-product .card-related:nth-child(4),
+  .related-product .card-related:nth-child(5) {
+    display: none;
+  }
+
+  .related {
+    width: 100%;
+    padding-bottom: 10px;
+    margin-top: 3%;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px rgba(104, 104, 104, 0.227);
+    border-radius: 10px;
+  }
+
+  .related-product {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .related-title {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 20px;
+    align-items: center;
+  }
+
+  .related-text p {
+    font-family: 'nunito';
+    font-weight: 700;
+    font-size: 30px;
+    color: #000000;
+    margin: 0;
+  }
+
+  .see-more a {
+    text-decoration: none;
+  }
+
+  .card-related {
+    width: 150px;
+    height: 220px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(104, 104, 104, 0.227);
+    border-radius: 7px;
+  }
+
+  .isinya {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+  }
+
+  .gambar {
+    width: 150px;
+    border-radius: 7px;
+  }
+
+  .detail {
+    width: 30px;
+  }
+
+  .details {
+    font-family: 'Poppins', sans-serif;
+    gap: 10px;
+    display: inline-block;
+  }
+
+  .nama {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .nama p {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  .harga p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .search-web {
+    margin-left: 2%;
+    position: relative;
+    z-index: 2;
+  }
+
+  .layout-search {
+    display: flex;
+  }
+
+  #search-web {
+    width: 150px;
+    height: 30px;
+    background: #ffffff;
+    border: 0.1vh solid #9f9f9f;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding-left: 6%;
+    padding-right: 6%;
+    font-size: 1.125vw;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 3px #a1a1a177;
+    font-size: 14px;
+    font-family: 'Poppins';
+  }
+
+  .search-web i {
+    margin-left: -15%;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+  }
+
+  .layout-search button {
+    width: 40px;
+    height: 30px;
+    background-color: #1C3879;
+    border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding-left: 2%;
+    box-shadow: 1px 1px 3px #a1a1a177;
+  }
+
+  .konten {
+    font-size: 10px;
+  }
+
+  .logo-copyright img{
+    width: 70px;
+  }
+
+  .logo-copyright p{
+    font-size: 7px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 675px) {
+  .footer {
+    display: none;
+  }
+
+  .copyright {
+    display: block;
+    height: 50px;
+    background-color: #0d1a34;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 50px;
+  }
+
+  .copyright p{
+    padding: 14px 10px;
+  }
+
+  .desciption {
+    width: 200px;
+  }
+
+  .other-product img:nth-child(4){
+    display: none;
+  }
+
+  #search-web {
+    width: 100px;
+    height: 20px;
+    background: #ffffff;
+    border: 0.1vh solid #9f9f9f;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 6%;
+    padding-right: 6%;
+    font-size: 1.125vw;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 3px #a1a1a177;
+    font-size: 14px;
+    font-family: 'Poppins';
+  }
+
+  .search-web i {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+  }
+
+  .layout-search button {
+    width: 30px;
+    height: 20px;
+    background-color: #1C3879;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-left: 2%;
+    box-shadow: 1px 1px 3px #a1a1a177;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-link i {
+    font-size: 10px;
+  }
+
+  .nav-link img {
+    width: 20px;
+  }
+
 }
