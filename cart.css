@@ -210,6 +210,11 @@ nav {
 }
 
 /* cart content */
+.content{
+  display: flex;
+  gap: 30px;
+  margin-top: 120px;
+}
 .cart-content {
   width: 100%;
   margin-top: 20px;
@@ -232,7 +237,9 @@ nav {
   gap: 7px;
   font-weight: 700;
   font-style: 'nuniuto';
+  position: relative;
 }
+
 
 .delete button {
   background-color: transparent;
@@ -240,11 +247,12 @@ nav {
   color: #77A4FF;
   font-style: 'nunito';
   font-weight: 500;
+
 }
 
 .cart-product {
   width: 100%;
-  height: 120px;
+  height: 160px;
   border: 1px solid rgb(209, 209, 209);
   border-radius: 5px;
   align-items: center;
@@ -254,6 +262,15 @@ nav {
   display: flex;
   align-items: center;
   gap: 15px;
+  margin-bottom: -5px;
+}
+
+.header-cart #check{
+  margin-left: 30px;
+}
+.store {
+  font-size: 25px;
+  color: black;
 }
 
 .header-cart a{
@@ -261,8 +278,99 @@ nav {
   align-items: center ;
   gap: 10px;
 }
+.header-cart p{
+  margin-top: 10px;
+  color: #000;
+}
+.content-product{
+  display: flex;
+  width: 95%;
+  padding: 10px 20px;
+  border-top: solid black 0.5px;
+  margin: 0px auto;
+}
+.details-product{
+  display: flex;
+  flex-direction: column;
+  line-height: 15px;
+}
+.content-product img{
+  width: 120px;
+  height: 100%;
+  margin-right: 20px;
+  margin-left: -15px;
+}
+.row-1 .name p:first-child{
+  font-size: 13px;
+  color: #77A4FF;
+  margin-bottom: 2px;
+  margin-top: 15px;
+}
+.row-1 {
+  display: flex;
+}
+.row-1 .price{
+position: relative;
+left: 460px;
+top: 10px;
+font-size: 18px;
+}
+.row-2 {
+  display: flex;
+}
+.row-2 .row-kanan{
+  display: flex;
+  gap: 15px;
+  position: relative;
+  left: 332px;
+  top: -20px;
+}
 
-.header-cart a img{
-  width: 35px;
-  height: 35px;
+.row-2 .row-kanan button{
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+}
+
+.row-2 .row-kanan input{
+  width: 20px;
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+}
+.row-kanan .quantity button{
+  font-size: 20px;
+}
+.heart{
+  font-size: 20px;
+  margin-top: 5px;
+}
+.trash{
+  font-size: 20px;
+  position: relative;
+  top: 4px;
+  border-left: solid black 1px;
+  padding-left: 10px;
+}
+.stock{
+  font-size: 13px;
+  position: relative;
+  left: 564px;
+  top: -28px;
+  color: #77A4FF;
+}
+.type{
+  background-color: #77A4FF;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+}
+.favs button{
+  position: relative;
+  top: -5px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
