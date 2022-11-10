@@ -1,3 +1,7 @@
+.container{
+  user-select: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -294,6 +298,7 @@ nav {
   display: flex;
   flex-direction: column;
   line-height: 15px;
+  width: 100%;
 }
 .content-product img{
   width: 120px;
@@ -309,11 +314,9 @@ nav {
 }
 .row-1 {
   display: flex;
+  justify-content: space-between;
 }
 .row-1 .price{
-position: relative;
-left: 420px;
-top: 10px;
 font-size: 18px;
 }
 .row-2 {
@@ -321,10 +324,8 @@ font-size: 18px;
 }
 .row-2 .row-kanan{
   display: flex;
-  gap: 15px;
-  position: relative;
-  left: 295px;
-  top: -20px;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .row-2 .row-kanan button{
@@ -356,9 +357,6 @@ font-size: 18px;
 }
 .stock{
   font-size: 13px;
-  position: relative;
-  left: 520px;
-  top: -28px;
   color: #77A4FF;
 }
 .type{
