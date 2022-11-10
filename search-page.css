@@ -144,6 +144,7 @@ nav {
 
 .nav-item i {
   font-size: 20px;
+  color: rgb(49, 49, 49);
 }
 
 .nav-item>* :active {
@@ -325,7 +326,7 @@ nav {
 }
 
 .product-content {
-  width: 1190px;
+  width: 1150px;
   padding: 10px 16px;
 }
 
