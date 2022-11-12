@@ -392,6 +392,8 @@ ul.breadcrumb li a:hover {
   border: 1px solid rgb(48, 48, 48);
   border-right: none;
   padding: 0px 5px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
 .filter-dropdown select {
@@ -400,8 +402,91 @@ ul.breadcrumb li a:hover {
   color: #333333;
   font-style: 'quicksand';
   border: 1px solid rgb(48, 48, 48);
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
 .filter-dropdown select:active{
   border: 1px solid rgb(48, 48, 48);
+}
+
+.product {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row-top-product{
+  display: flex;
+  gap: 20px;
+}
+
+.card-product {
+  width: 170px;
+  height: 260px;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px rgba(151, 151, 151, 0.477);
+  box-sizing: border-box;
+  border-radius: 7px;
+}
+
+.card-product img{
+  width: 170px;
+  height: 170px;
+  background-size: contain;
+  border-radius: 7px;
+}
+
+.desc-product p{
+  margin: 0;
+}
+
+.category-product p {
+  font-size: 12px;
+  color: rgb(171, 171, 171);
+  font-family: 'nunito';
+  margin: 2px 0px 0px 2px;
+  font-weight: 600;
+}
+
+.name-product p {
+  font-size: 16px;
+  font-family: 'nunito';
+  line-height: 1;
+  margin: 0px 2px;
+}
+
+.price p{
+  font-size: 16px;
+  font-family: 'nunito';
+  font-weight: 700;
+}
+
+.row-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4px 2px;
+}
+
+.btn-detail {
+  display: flex;
+  gap: 7px;
+}
+
+.other-btn button{
+  width: fit-content;
+  height: fit-content;
+  border: none;
+  background-color: transparent;
+}
+
+.other-btn button:first-child {
+  color: #0d6ec3;
+}
+
+.other-btn button:last-child {
+  color: rgb(255, 53, 53);
 }
