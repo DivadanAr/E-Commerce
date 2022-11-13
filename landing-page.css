@@ -512,6 +512,67 @@ a {
   border-radius: 5px
 }
 
+
+
+
+#wrapper {
+  width: 100%;
+  max-width: 964px;
+  position: relative;
+}
+
+#carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+#carousel::-webkit-scrollbar {
+  height: 0;
+}
+
+#prev,
+#next {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: white;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+#prev {
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  display: none;
+}
+
+#next {
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+#content {
+  display: grid;
+  grid-gap: 16px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.item {
+  width: 180px;
+  height: 180px;
+  background: green;
+}
+
+
 /* footer */
 .footer {
   display: flex;
@@ -796,4 +857,81 @@ a {
   }
 
 }
+.product-carousel {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.row-top-product{
+  display: flex;
+  gap: 20px;
+}
+.card-product {
+  width: 170px;
+  height: 260px;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px rgba(151, 151, 151, 0.477);
+  box-sizing: border-box;
+  border-radius: 7px;
+}
 
+.card-product img{
+  width: 170px;
+  height: 170px;
+  background-size: contain;
+  border-radius: 7px;
+}
+
+.desc-product p{
+  margin: 0;
+}
+
+.category-product p {
+  font-size: 12px;
+  color: rgb(171, 171, 171);
+  font-family: 'nunito';
+  margin: 2px 0px 0px 2px;
+  font-weight: 600;
+}
+
+.name-product p {
+  font-size: 16px;
+  font-family: 'nunito';
+  line-height: 1;
+  margin: 0px 2px;
+}
+
+.price p{
+  font-size: 16px;
+  font-family: 'nunito';
+  font-weight: 700;
+}
+
+.row-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4px 2px;
+}
+
+.btn-detail {
+  display: flex;
+  gap: 7px;
+}
+
+.other-btn button{
+  width: fit-content;
+  height: fit-content;
+  border: none;
+  background-color: transparent;
+}
+
+.other-btn button:first-child {
+  color: #0d6ec3;
+}
+
+.other-btn button:last-child {
+  color: rgb(255, 53, 53);
+}
