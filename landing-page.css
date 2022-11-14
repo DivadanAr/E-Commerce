@@ -513,8 +513,6 @@ a {
 }
 
 
-
-
 #wrapper {
   width: 100%;
   max-width: 964px;
@@ -914,6 +912,7 @@ a {
   align-items: center;
   justify-content: space-between;
   margin: 4px 2px;
+  width: 160px;
 }
 
 .btn-detail {
@@ -921,17 +920,17 @@ a {
   gap: 7px;
 }
 
-.other-btn button{
+.button-detail button{
   width: fit-content;
   height: fit-content;
   border: none;
   background-color: transparent;
 }
 
-.other-btn button:first-child {
+.button-detail button:first-child {
   color: #0d6ec3;
 }
 
-.other-btn button:last-child {
+.button-detail button:last-child {
   color: rgb(255, 53, 53);
 }
