@@ -138,7 +138,17 @@ body {
   flex-direction: column;
 }
 
-#registration input {
+.checkbox-remember {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fullname input,
+.email input,
+.phone-number input,
+.major input,
+.password input{
   padding: 12px 10px;
   border-radius: 8px;
   width: 440px;
