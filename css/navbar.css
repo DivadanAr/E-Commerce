@@ -8,12 +8,12 @@
   }
   
   svg {
-    margin-top: -1.5%;
+  
   }
   
   nav {
     position: relative;
-    top: 1.5vw;
+    top: 2vw;
     height: fit-content;
     box-shadow: .1vh .1vh .5vh #5874af77;
   }
@@ -76,6 +76,7 @@
   }
   
   .search-web {
+    margin-top: 0.5%;
     margin-left: 2%;
     position: relative;
     z-index: 2;
@@ -164,8 +165,7 @@
   
   /* end navbar */
 
-  
-@media (max-width: 1240px) {
+  @media (max-width: 1240px) {
     .nav-link {
       margin-top: -8px;
       padding: 8px 7px;
@@ -181,14 +181,6 @@
   
     .container {
       padding: 0;
-    }
-  
-    .content {
-      width: 100%;
-      height: 100%;
-      margin-top: 20px;
-      display: flex;
-      flex-direction: column;
     }
   
     .search-web {
@@ -233,9 +225,11 @@
       padding-left: 2%;
       box-shadow: 1px 1px 3px #a1a1a177;
     }
+  
   }
   
-  @media (max-width: 675px) {  
+  @media (max-width: 675px) {
+
     #search-web {
       width: 100px;
       height: 20px;
