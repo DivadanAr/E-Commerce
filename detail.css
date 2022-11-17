@@ -128,6 +128,8 @@ nav {
 .user {
   border-radius: 50%;
   width: 40px;
+  height: 40px;
+  object-fit: cover;
 }
 
 .user-setting,
@@ -180,8 +182,10 @@ nav {
 
 .main-product img {
   width: 500px;
+  height: 450px;
   margin-right: 70px;
   cursor: pointer;
+  object-fit: cover;
 }
 
 .other-product {
@@ -195,7 +199,9 @@ nav {
 
 .other-product img {
   width: 100px;
+  height: 100px;
   cursor: pointer;
+  object-fit: cover;
 }
 
 .card {
@@ -240,11 +246,11 @@ nav {
 }
 
 /* end rating */
-.name-product{
+.name-product-main{
   width: fit-content;
 }
 
-.name-product p {
+.name-product-main p {
   font-family: 'Poppins';
   font-weight: 500;
   font-size: 40px;
@@ -253,7 +259,7 @@ nav {
   width: fit-content;
 }
 
-.price p {
+.main-price p {
   font-family: 'Poppins';
   font-size: 30px;
   color: #000000;
@@ -321,7 +327,9 @@ nav {
 
 .profile-img img {
   width: 80px;
+  height: 80px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .profile-name {
@@ -457,6 +465,8 @@ nav {
 
 .profile-comment-img img {
   width: 80px;
+  height: 80px;
+  object-fit: cover;
   border-radius: 50%;
 }
 
@@ -488,11 +498,16 @@ nav {
 
 .related-product {
   display: flex;
-  height: 300px;
+  width: 1250px;
+  height: 100%;
+  object-fit: cover;
   justify-content: center;
   gap: 40px;
   align-items: center;
   overflow: hidden;
+  margin: 0px auto;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
 }
 
 .related-title {
@@ -516,51 +531,77 @@ nav {
   text-decoration: none;
 }
 
-.card-related {
+.card-product {
   width: 200px;
   height: 260px;
-  background-color: white;
-  box-shadow: 2px 2px 5px rgba(104, 104, 104, 0.227);
+  background-color: #fff;
+  box-shadow: 1px 1px 5px rgba(151, 151, 151, 0.477);
+  box-sizing: border-box;
   border-radius: 7px;
 }
 
-.isinya {
+.card-product img{
+  width: 200px;
+  height: 170px;
+  background-size: contain;
+  border-radius: 7px;
+}
+
+.desc-product p{
+  margin: 0;
+}
+
+.category-product p {
+  font-size: 12px;
+  color: rgb(171, 171, 171);
+  font-family: 'nunito';
+  margin: 2px 0px 0px 2px;
+  font-weight: 600;
+}
+
+.name-product p {
+  height: 32px;
+  font-size: 16px;
+  font-family: 'nunito';
+  line-height: 1;
+  margin: 0px 2px;
+}
+
+.price p{
+  font-size: 16px;
+  font-family: 'nunito';
+  font-weight: 700;
+}
+
+.row-price {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10px;
+  margin: 4px 2px;
 }
 
-.gambar {
-  width: 200px;
-  border-radius: 7px;
+.btn-detail {
+  display: flex;
+  gap: 7px;
 }
 
-.detail {
-  width: 30px;
+.other-btn button{
+  width: fit-content;
+  height: fit-content;
+  border: none;
+  background-color: transparent;
 }
 
-.details {
-  font-family: 'Poppins', sans-serif;
-  gap: 10px;
-  display: inline-block;
+.other-btn button:first-child {
+  color: #0d6ec3;
 }
 
-.nama {
-  font-size: 16px;
-  font-weight: 500;
+.heart{
+  font-size: 20px;
+  margin: 1px 1px 0px;
+  color: red;
 }
 
-.nama p {
-  margin: 0;
-  margin-bottom: 10px;
-  padding: 0;
-}
-
-.harga p {
-  margin: 0;
-  padding: 0;
-}
 
 /* footer */
 .footer {
@@ -769,17 +810,21 @@ nav {
 
 .modal-product img {
   width: 700px;
+  height: 500px;
+  object-fit: cover;
 }
 
 .other-modal {
   display: flex;
   justify-content: center;
   padding-top: 10px;
-  gap: 10px;
+  gap: 20px;
 }
 
 .other-modal img {
   width: 100px;
+  height: 100px;
+  object-fit: cover;
   cursor: pointer;
 }
 
@@ -820,7 +865,6 @@ nav {
 #wrapper
 {
 	text-align: center;
-	width: 500px;
 	margin: auto;
 }
 
@@ -937,6 +981,8 @@ nav {
 
   .related-product {
     display: flex;
+    flex-wrap: wrap;
+    width: 90%;
     height: 300px;
     justify-content: center;
     gap: 40px;
