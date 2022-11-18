@@ -37,7 +37,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- css native -->
-    <link rel="stylesheet" href="css/order-review.css">
+    <link rel="stylesheet" href="css/order-detail.css">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
@@ -108,61 +108,70 @@
 
         <!-- content -->
         <div class="content">
-            <div class="header-review">
-                <p>Order Review</p>
+          <div class="header-detail">
+            <div class="title-header">
+              <p>Order Detail</p>
             </div>
-            <div class="content-review">
-                <div class="card-review">
-                    <form action="">
-                        <div class="header-card">
-                            <i class="fas fa-store    "></i>
-                            <p>Nama Toko</p>
-                        </div>
-                        <div class="row-product-review">
-                            <div class="left-rev">
-                                <div class="img-rev">
-                                    <img src="assets/web1.jpg" alt="">
-                                </div>
-                                <div class="desc-rev">
-                                    <div class="name-rev">
-                                        <p>Web Design LandingPage</p>
-                                    </div>
-                                    <div class="title-rev">
-                                        <p>What is overall quality of this product?</p>
-                                    </div>
-                                    <div class="star-widget">
-                                        <input type="radio" name="rate" id="rate-5">
-                                        <label for="rate-5" class="fas fa-star"></label>
-                                        <input type="radio" name="rate" id="rate-4">
-                                        <label for="rate-4" class="fas fa-star"></label>
-                                        <input type="radio" name="rate" id="rate-3">
-                                        <label for="rate-3" class="fas fa-star"></label>
-                                        <input type="radio" name="rate" id="rate-2">
-                                        <label for="rate-2" class="fas fa-star"></label>
-                                        <input type="radio" name="rate" id="rate-1">
-                                        <label for="rate-1" class="fas fa-star"></label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right-rev">
-                                <label for="user">Show this review as..</label>
-                                <select name="user" id="user">
-                                    <option value="anonymous"> Anonymous</option>
-                                    <option value="anonymous">Username</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row-comment">
-                            <div class="comment-rev">
-                                <textarea name="" id="" cols="167" rows="4" placeholder="Give us your honey review"></textarea>
-                            </div>
-                        </div>
-                        <div class="btn-submit">
-                            <input type="submit" name="submit" id="submit" value="submit">
-                        </div>
-                    </form>
+            <div class="desc-header">
+              <div class="row-top">
+                <p>Order Id : 8934090139</p>
+              </div>
+              <div class="row-bottom">
+                <div class="date">
+                  <p>Order date : <span>31 November 2022</span></p>
                 </div>
+                <div class="inv">
+                  <p>Invoive no : INV/3141/A41</p>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="content-order">
+            <div class="card-product">
+              <div class="right-detail">
+                <div class="img-order">
+                  <img src="assets/web1.jpg" alt="">
+                </div>
+                <div class="desc-order">
+                  <div class="name-detail">
+                    <p>Web Design Landingpage</p>
+                  </div>
+                  <div class="category-detail">
+                    <p>Web Design</p>
+                    <p>|</p>
+                    <p>Software</p>
+                  </div>
+                </div>
+              </div>
+              <div class="left-detail">
+                <div class="qty">
+                  <p>Quantity</p>
+                  <p>1</p>
+                </div>
+                <div class="total-detail">
+                  <p>Subtotal</p>
+                  <p>Rp. 100.000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-information">
+            <div class="payment-det">
+              <p>Payment</p>
+              <p>JKWE67923VSHJD</p>
+            </div>
+            <div class="gmail-det">
+              <p>Gmail</p>
+              <p>kgs.farhanaziz@fmail.com</p>
+            </div>
+            <div class="delivery-det">
+              <p>Delivery</p>
+              <div class="address-det">
+                <p>address</p>
+                <p>Lapangan Sanca, Bhakti Abri, Kota Depok, Jawa Barat, Indonesia, 21918</p>
+              </div>
+            </div>
+          </div>
         </div>
     </section>
 </body>
