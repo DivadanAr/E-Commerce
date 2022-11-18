@@ -146,14 +146,14 @@
     width: 80%;
     display: flex;
     position: relative;
-    padding-top: 7vh;
+    padding-top: 12vh;
     justify-content: center;
   }
   
   .pict {
     width: 25vw;
     height: 55vh;
-    margin-left: -170px;
+    margin-left: 100px;
     align-items: center;
     justify-content: start;
     display: flex;
