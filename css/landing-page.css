@@ -398,8 +398,9 @@ nav {
 }
 
 .img-product img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 450px;
+  height: 350px;
+  object-fit: cover;
 }
 
 .desc-product {
@@ -471,6 +472,7 @@ a {
 .our-product {
   margin-top: 50px;
   width: 1300px;
+  
 }
 
 .our-product h1 {
@@ -514,9 +516,9 @@ a {
 
 
 #wrapper {
-  width: 100%;
-  max-width: 964px;
-  position: relative;
+  width: 91%;
+  height: 100%;
+  transform: translateX(65px);
 }
 
 #carousel {
@@ -534,7 +536,7 @@ a {
   display: flex;
   justify-content: center;
   align-content: center;
-  background: white;
+  background: #243964;
   border: none;
   padding: 8px;
   border-radius: 50%;
@@ -546,14 +548,14 @@ a {
 #prev {
   top: 50%;
   left: 0;
-  transform: translate(50%, -50%);
+  transform: translate(-150%, -50%);
   display: none;
 }
 
 #next {
   top: 50%;
   right: 0;
-  transform: translate(-50%, -50%);
+  transform: translate(150%, -50%);
 }
 
 #content {
@@ -562,6 +564,7 @@ a {
   grid-auto-flow: column;
   margin: auto;
   box-sizing: border-box;
+  z-index: -99;
 }
 
 .item {
@@ -862,9 +865,10 @@ a {
   flex-direction: column;
   gap: 20px;
 }
-.row-top-product{
+.row-product{
   display: flex;
-  gap: 20px;
+  gap: 30px;
+  padding-bottom: 10px;
 }
 .card-product {
   width: 170px;
@@ -878,6 +882,7 @@ a {
 .card-product img{
   width: 170px;
   height: 170px;
+  object-fit: cover;
   background-size: contain;
   border-radius: 7px;
 }
@@ -899,6 +904,7 @@ a {
   font-family: 'nunito';
   line-height: 1;
   margin: 0px 2px;
+  height: 32px;
 }
 
 .price p{

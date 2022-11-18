@@ -1,3 +1,5 @@
+var img = document.querySelectorAll(".other-product .prev img");
+
 // preview
 const set = document.querySelector('.other-product');
 set.addEventListener('click', handleClick, false);
@@ -22,6 +24,12 @@ var span = document.getElementsByClassName("close")[0];
 function prev(element) {
   modal.style.display = "block";
   document.getElementById("main-modal").src = element.src;
+  var mainImg = document.querySelectorAll(".other-product .prev img");
+  var modalImg = document.querySelectorAll(".other-modal img");
+  modalImg[0].src = mainImg[0].src;
+  modalImg[1].src = mainImg[1].src;
+  modalImg[2].src = mainImg[2].src;
+  modalImg[3].src = mainImg[3].src;
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -119,3 +127,4 @@ function onTheClick(e) {
 //   mainImg.src = allModalImgs[currentImg].src;
 //   currentImg = (currentImg -= 1) % allModalImgs.length
 // });
+
