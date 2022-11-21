@@ -155,7 +155,7 @@ nav {
 
 .dropdown-item {
   display: flex;
-  justify-content: spnunitoace-between;
+  justify-content: space-between;
 }
 
 .dropdown-menu {
