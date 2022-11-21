@@ -226,4 +226,13 @@
     font-size: 18px;
     font-weight: 700;
   }
+  footer{
+    display: flex;
+    justify-content: end;
+    padding-right: 50px;
+    padding-top: 10px;
+    background-color: #1C3879;
+    height: 50px;
+    color: rgba(255, 255, 255, 0.508);
+  }
 
