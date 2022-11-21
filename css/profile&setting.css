@@ -168,14 +168,14 @@
   }
   /* end navbar */
 
-  .container{
+  .main{
     margin-top: 105px;
   }
   .sidebar{
     width: 400px;
     height: 600px;
-    margin-left: -70px;
     padding:40px 30px;
+    background-color: #fff;
     border-right: 1.5px solid rgba(0, 0, 0, 0.463);
   }
   .sidebar-content{
@@ -183,6 +183,18 @@
     flex-direction: column;
     gap: 40px;
   }
+
+  .sidebar-content a {
+    display: flex;
+    align-items: center;
+  }
+
+  .sidebar-content a p{
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
   .account, .product,.transaction,.report,.setting{
     display: flex;
     justify-content: space-between;
