@@ -141,13 +141,13 @@
   
   /* end navbar */
   
-  
+
   .content {
     width: 80%;
     display: flex;
-    position: relative;
     padding-top: 12vh;
     justify-content: center;
+
   }
   
   .pict {
@@ -175,7 +175,7 @@
   .details{
     margin-left: 30px;
     margin-top: 7px;
-  
+    height: 100%;
   }
   .id, .first-name, .last-name, .email, .phone-number, .address{
     display: flex;
@@ -204,10 +204,10 @@
   
   .pesanan {
     display: flex;
-    justify-content: space-evenly;
-    width: 80%;
+    justify-content: left;
+    width: 1300px;
     font-size: 20px;
-    margin: 20px 100px;
+    margin: 20px auto;
   
   }
   
