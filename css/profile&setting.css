@@ -174,10 +174,14 @@
   }
   .sidebar{
     width: 400px;
-    height: 600px;
-    padding:40px 30px;
+    height: 100vh;
+    margin-top: -150px;
+    padding: 180px 30px 10px;
     background-color: #fff;
     border-right: 1.5px solid rgba(0, 0, 0, 0.463);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .sidebar-content{
     display: flex;
@@ -303,9 +307,11 @@
     display: flex;
     justify-content: end;
     padding-right: 50px;
-    padding-top: 10px;
+    align-items: center;
     background-color: #1C3879;
     height: 50px;
     color: rgba(255, 255, 255, 0.508);
+    position: relative;
+    bottom: 0;
   }
 
