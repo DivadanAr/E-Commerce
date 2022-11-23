@@ -36,7 +36,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- css native -->
-    <link rel="stylesheet" href="css/upcoming-orders.css">
+    <link rel="stylesheet" href="css/overall-report.css">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
@@ -47,7 +47,7 @@
     <title>ZenIT</title>
 </head>
 <body>
-    
+     
     <section>
         <!-- navbar -->
         <div class="nvbr">
@@ -161,119 +161,53 @@
             <!-- sidebar -->
             <div class="contents">
                 <div class="sub-content">
-                    <a href="">Upcoming Orders</a>
-                    <a href="">Processed Orders</a>
-                    <a href="">Completed Orders</a>
-                    <a href="">Canceled Orders</a>
+                    <a href="">Overall Report</a>
+                    <a href="">Monthly Report</a>
                 </div>
 
-                <div class="content-tabs">
-                    <table border="1px solid black">
-                        <tr>
-                            <th style="width: 70px;">No</th>
-                            <th style="text-align: start;">Product</th>
-                            <th >Order ID</th>
-                            <th>Customer Name</th>
-                            <th style="width: 100px;">Quantity</th>
-                            <th>Type</th>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <td  style="width: 90px;">1</td>
-                            <td style="display: flex; gap:20px; text-align: start; width: 250px;">
-                                <img src="assets/web3.jpg" alt="">
-                                <div class="prod-details" style="line-height: 14px;">
-                                    <p>Product Name</p>
-                                    <p>19 - 11 - 22</p>
-                                    <p>Rp.999.999</p>
-                                </div>
-                            </td>
-                            <td style="width: 70px;">001</td>
-                            <td style="width: 180px;">User Agus</td>
-                            <td style="width: 100px;">2</td>
-                            <td style="width: 70px;"><p id="label-order"  style="margin-top: 10px;">Software</p></td>
-                            <td style="width: 150px;">
-                                <iconify-icon icon="material-symbols:check-circle-rounded" style="color: #5874af; font-size: 40px;"></iconify-icon>
-                                <iconify-icon id="btn-review" icon="ri:close-circle-fill" style="color: #d22d2dc7; font-size: 40px;"></iconify-icon>
-                            </td>
-                        </tr>
-                         <tr>
-                            <td  style="width: 90px;">1</td>
-                            <td style="display: flex; gap:20px; text-align: start; width: 250px;">
-                                <img src="assets/web3.jpg" alt="">
-                                <div class="prod-details" style="line-height: 14px;">
-                                    <p>Product Name</p>
-                                    <p>19 - 11 - 22</p>
-                                    <p>Rp.999.999</p>
-                                </div>
-                            </td>
-                            <td style="width: 70px;">001</td>
-                            <td style="width: 180px;">User Agus</td>
-                            <td style="width: 100px;">2</td>
-                            <td style="width: 70px;"><p id="label-order" style="margin-top: 10px;">Software</p></td>
-                            <td style="width: 150px;">
-                                <iconify-icon icon="material-symbols:check-circle-rounded" style="color: #5874af; font-size: 40px;"></iconify-icon>
-                                <iconify-icon id="btn-review" icon="ri:close-circle-fill" style="color: #d22d2dc7; font-size: 40px;"></iconify-icon>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td  style="width: 90px;">1</td>
-                            <td style="display: flex; gap:20px; text-align: start; width: 250px;">
-                                <img src="assets/web3.jpg" alt="">
-                                <div class="prod-details" style="line-height: 14px;">
-                                    <p>Product Name</p>
-                                    <p>19 - 11 - 22</p>
-                                    <p>Rp.999.999</p>
-                                </div>
-                            </td>
-                            <td style="width: 70px;">001</td>
-                            <td style="width: 180px;">User Agus</td>
-                            <td style="width: 100px;">2</td>
-                            <td style="width: 70px;"><p id="label-order" style="margin-top: 10px;">Software</p></td>
-                            <td style="width: 150px;">
-                                <iconify-icon icon="material-symbols:check-circle-rounded" style="color: #5874af; font-size: 40px;"></iconify-icon>
-                                <iconify-icon id="btn-review" icon="ri:close-circle-fill" style="color: #d22d2dc7; font-size: 40px;"></iconify-icon>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td  style="width: 90px;">1</td>
-                            <td style="display: flex; gap:20px; text-align: start; width: 250px;">
-                                <img src="assets/web3.jpg" alt="">
-                                <div class="prod-details" style="line-height: 14px;">
-                                    <p>Product Name</p>
-                                    <p>19 - 11 - 22</p>
-                                    <p>Rp.999.999</p>
-                                </div>
-                            </td>
-                            <td style="width: 70px;">001</td>
-                            <td style="width: 180px;">User Agus</td>
-                            <td style="width: 100px;">2</td>
-                            <td style="width: 70px;"><p id="label-order" style="margin-top: 10px;">Software</p></td>
-                            <td style="width: 150px;">
-                                <iconify-icon icon="material-symbols:check-circle-rounded" style="color: #5874af; font-size: 40px;"></iconify-icon>
-                                <iconify-icon id="btn-review" icon="ri:close-circle-fill" style="color: #d22d2dc7; font-size: 40px;"></iconify-icon>
-                            </td>
-                        </tr>
-                    </table>
+                <div class="chart">
                 </div>
+
+                <div class="cards">
+                    <div class="product-total">
+                        <iconify-icon icon="ph:package" style="font-size: 70px;"></iconify-icon>
+                        <div class="text">
+                            <p>Product Total</p>
+                            <h5>40</h5>
+                        </div>
+                    </div>
+                    <div class="product-total">
+                        <iconify-icon icon="ph:package" style="font-size: 70px;"></iconify-icon>
+                        <div class="text">
+                            <p>Product Total</p>
+                            <h5>40</h5>
+                        </div>
+                    </div>
+                    <div class="product-total">
+                        <iconify-icon icon="ph:package" style="font-size: 70px;"></iconify-icon>
+                        <div class="text">
+                            <p>Product Total</p>
+                            <h5>40</h5>
+                        </div>
+                    </div>
+                    <div class="product-total">
+                        <iconify-icon icon="ph:package" style="font-size: 70px;"></iconify-icon>
+                        <div class="text">
+                            <p>Product Total</p>
+                            <h5>40</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <table>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    
+                </table>
             </div>
-        </div>
-        
-         <!-- modal -->
-    <div id="myRev" class="modalreview">
-        <div class="modalreview-content">
-          <div class="header">
-            <span class="close close-rev">&times;</span>
-          </div>
-          <p class="cust-rev">Customer Review</p>
-          <p>Haloooo</p>
-        </div>
-    </div>
-    </section>
-     <footer>
-        © 2022 Zen-IT, SMK Taruna Bhakti Copyright Reserve
-    </footer>
 
-    <script src="js/upcoming_order.js"></script>
+        </div>
+    </section>
 </body>
 </html>
