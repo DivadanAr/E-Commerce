@@ -275,10 +275,27 @@ nav {
 }
 
 .chart{
-    margin: auto;
-    width: 94%;
+    margin: 30px auto;
+    width: 96%;
     height: 200px;
     background-color: #000000;
+}
+
+.export{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: end;
+}
+.export button{
+width: 150px;
+margin-top: -15px;
+margin-right: 20px;
+background-color: #233874;
+border-radius: 5px;
+color: white;
+border: none;
+padding: 5px;
 }
 
 .cards{
@@ -287,7 +304,7 @@ nav {
     margin-left: -30px;
 }
 
-.product-total, .selled-product{
+.product-total, .selled-product, .profit, .income{
     width: 200px;
     height: 100px;
     background-color: white;
@@ -298,12 +315,27 @@ nav {
     margin: 20px 0px 0px 30px;
 }
 .text{
-    text-align: center;
-    line-height: 10px;
+    margin-left: 10px;
+    text-align: start;
+    line-height: 0px;
 }
 .text p{
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 20px;
 }
 .text h5{
     font-size: 25px;
+}
+table{
+    margin: auto;
+}
+table th {
+    text-align: center;
+    padding: 10px 0px;
+}
+table td {
+    text-align: center;
+    padding-top: 10px;
+    height: 50px;
+    padding: 5px;
 }
