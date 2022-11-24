@@ -273,3 +273,78 @@ nav {
     text-decoration: none;
     color: #000;
 }
+
+.total-total {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+}
+
+.left-row {
+    border-right: #000 solid 1.5px;
+    padding-right: 100px;
+}
+
+.left-row .one {
+    display: flex;
+    gap: 200px;
+}
+
+.left-row .two {
+    display: flex;
+    gap: 130px;
+}
+
+.right-row .one {
+    display: flex;
+    gap: 200px;
+}
+
+.right-row .two {
+    display: flex;
+    gap: 215px;
+}
+
+
+.export {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: end;
+    margin-top: 30px;
+}
+
+.export button {
+    width: 150px;
+    margin-top: -15px;
+    margin-right: 20px;
+    background-color: #233874;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+
+table{
+    margin: 20px auto;
+}
+table th {
+    text-align: center;
+    padding: 10px 0px;
+}
+table td {
+    text-align: center;
+    padding-top: 10px;
+    height: 50px;
+    padding: 5px;
+    width: 220px;
+    height: 60px;
+}   
+table tr:first-child{
+
+}
+table tr{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
