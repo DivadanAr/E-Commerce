@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,8 +47,9 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
     <title>ZenIT</title>
 </head>
+
 <body>
-    
+
     <section>
         <!-- navbar -->
         <div class="nvbr">
@@ -172,14 +174,14 @@
                         <tr>
                             <th style="width: 70px;">No</th>
                             <th style="text-align: start;">Product</th>
-                            <th >Order ID</th>
+                            <th>Order ID</th>
                             <th>Customer Name</th>
                             <th style="width: 100px;">Quantity</th>
                             <th>Type</th>
                             <th></th>
                         </tr>
                         <tr>
-                            <td  style="width: 90px;">1</td>
+                            <td style="width: 90px;">1</td>
                             <td style="display: flex; gap:20px; text-align: start; width: 250px;">
                                 <img src="assets/web3.jpg" alt="">
                                 <div class="prod-details" style="line-height: 14px;">
@@ -191,13 +193,35 @@
                             <td style="width: 70px;">001</td>
                             <td style="width: 180px;">User Agus</td>
                             <td style="width: 100px;">2</td>
-                            <td style="width: 70px;"><p id="label-order"  style="margin-top: 10px;">Software</p></td>
+                            <td style="width: 70px;">
+                                <p id="label-order" style="margin-top: 10px;">Software</p>
+                            </td>
+                            <td style="width: 150px;">
+                                <a href="#" style="font-weight:600;" id="btn-receipt">Send</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 90px;">1</td>
+                            <td style="display: flex; gap:20px; text-align: start; width: 250px;">
+                                <img src="assets/web3.jpg" alt="">
+                                <div class="prod-details" style="line-height: 14px;">
+                                    <p>Product Name</p>
+                                    <p>19 - 11 - 22</p>
+                                    <p>Rp.999.999</p>
+                                </div>
+                            </td>
+                            <td style="width: 70px;">001</td>
+                            <td style="width: 180px;">User Agus</td>
+                            <td style="width: 100px;">2</td>
+                            <td style="width: 70px;">
+                                <p id="label-order" style="margin-top: 10px;">Software</p>
+                            </td>
                             <td style="width: 150px;">
                                 <a href="\" style="font-weight:600;">Send</a>
                             </td>
                         </tr>
-                         <tr>
-                            <td  style="width: 90px;">1</td>
+                        <tr>
+                            <td style="width: 90px;">1</td>
                             <td style="display: flex; gap:20px; text-align: start; width: 250px;">
                                 <img src="assets/web3.jpg" alt="">
                                 <div class="prod-details" style="line-height: 14px;">
@@ -209,13 +233,15 @@
                             <td style="width: 70px;">001</td>
                             <td style="width: 180px;">User Agus</td>
                             <td style="width: 100px;">2</td>
-                            <td style="width: 70px;"><p id="label-order" style="margin-top: 10px;">Software</p></td>
+                            <td style="width: 70px;">
+                                <p id="label-order" style="margin-top: 10px;">Software</p>
+                            </td>
                             <td style="width: 150px;">
-                              <a href="\" style="font-weight:600;">Send</a>
+                                <a href="\" style="font-weight:600;">Send</a>
                             </td>
                         </tr>
                         <tr>
-                            <td  style="width: 90px;">1</td>
+                            <td style="width: 90px;">1</td>
                             <td style="display: flex; gap:20px; text-align: start; width: 250px;">
                                 <img src="assets/web3.jpg" alt="">
                                 <div class="prod-details" style="line-height: 14px;">
@@ -227,25 +253,9 @@
                             <td style="width: 70px;">001</td>
                             <td style="width: 180px;">User Agus</td>
                             <td style="width: 100px;">2</td>
-                            <td style="width: 70px;"><p id="label-order" style="margin-top: 10px;">Software</p></td>
-                            <td style="width: 150px;">
-                              <a href="\" style="font-weight:600;">Send</a>
+                            <td style="width: 70px;">
+                                <p id="label-order" style="margin-top: 10px;">Software</p>
                             </td>
-                        </tr>
-                        <tr>
-                            <td  style="width: 90px;">1</td>
-                            <td style="display: flex; gap:20px; text-align: start; width: 250px;">
-                                <img src="assets/web3.jpg" alt="">
-                                <div class="prod-details" style="line-height: 14px;">
-                                    <p>Product Name</p>
-                                    <p>19 - 11 - 22</p>
-                                    <p>Rp.999.999</p>
-                                </div>
-                            </td>
-                            <td style="width: 70px;">001</td>
-                            <td style="width: 180px;">User Agus</td>
-                            <td style="width: 100px;">2</td>
-                            <td style="width: 70px;"><p id="label-order" style="margin-top: 10px;">Software</p></td>
                             <td style="width: 150px;">
                                 <a href="\" style="font-weight:600;">Send</a>
                             </td>
@@ -254,9 +264,33 @@
                 </div>
             </div>
         </div>
+        <div id="myReceipt" class="modalreceipt">
+            <div class="modalreceipt-content">
+                <div class="header">
+                    <span class="close close-rec">&times;</span>
+                </div>
+                <div class="reciep-content">
+                    <div class="receipt-pict">
+                        <p class="cust-rec">Receipt Pict</p>
+                    <label id="largeFile" for="file">
+                        <input type="file" id="file" />
+                    </label>
+                    </div>
+                    <div class="receipt-number">
+                        <p>Receipt Number</p>
+                    <input type="text">
+                    </div>
+                    <div class="btn-receipt">
+                        <button>submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-     <footer>
+    <script src="js/receipt.js"></script>
+    <footer>
         © 2022 Zen-IT, SMK Taruna Bhakti Copyright Reserve
     </footer>
 </body>
+
 </html>

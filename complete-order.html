@@ -193,7 +193,7 @@
                             <td style="width: 100px;">2</td>
                             <td style="width: 70px;"><p id="label-order"  style="margin-top: 10px;">Software</p></td>
                             <td style="width: 150px;">
-                                <a href="\" style="font-weight:600;">Review</a>
+                                <button href="" style="font-weight:600;" id="btn-form-rev">Review</button>
                             </td>
                         </tr>
                          <tr>
@@ -211,7 +211,7 @@
                             <td style="width: 100px;">2</td>
                             <td style="width: 70px;"><p id="label-order" style="margin-top: 10px;">Software</p></td>
                             <td style="width: 150px;">
-                              <a href="\" style="font-weight:600;"></a>
+                              <a href="\" style="font-weight:600;">review</a>
                             </td>
                         </tr>
                         <tr>
@@ -254,9 +254,46 @@
                 </div>
             </div>
         </div>
+        <div id="myForm" class="modalform">
+            <div class="modalform-content">
+                <div class="header">
+                    <span class="close close-form">&times;</span>
+                </div>
+                <div class="reciep-content">
+                    <div class="form-profile">
+                        <img src="assets/ALM00016.JPG" alt="">
+                        <p>Username kiagus ahmad farhan azis</p>
+                    </div>
+                    <div class="form-ratings">
+                        <p>Rating</p>
+                        <div class="star-widget">
+                            <input type="radio" name="rate" id="rate-5">
+                            <label for="rate-5" class="fas fa-star"></label>
+                            <input type="radio" name="rate" id="rate-4">
+                            <label for="rate-4" class="fas fa-star"></label>
+                            <input type="radio" name="rate" id="rate-3">
+                            <label for="rate-3" class="fas fa-star"></label>
+                            <input type="radio" name="rate" id="rate-2">
+                            <label for="rate-2" class="fas fa-star"></label>
+                            <input type="radio" name="rate" id="rate-1">
+                            <label for="rate-1" class="fas fa-star"></label>
+                        </div>
+                    </div>
+                    <div class="form-review">
+                        <p>Review</p>
+                    <textarea name="" id="" cols="83" rows="7"></textarea>
+                    </div>
+                    <div class="btn-form">
+                        <button>submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
      <footer>
         © 2022 Zen-IT, SMK Taruna Bhakti Copyright Reserve
     </footer>
+  <script src="js/form-review.js"></script>
+
 </body>
 </html>
