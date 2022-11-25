@@ -247,6 +247,7 @@ nav {
 
 .sidebar-footer .text {
     line-height: 10px;
+    text-align: start;
 }
 
 .sidebar-footer p {
@@ -273,200 +274,77 @@ nav {
     color: #000;
 }
 
-.content-tabs {
-    margin-left: 30px;
+.total-total {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
 }
 
+.left-row {
+    border-right: #000 solid 1.5px;
+    padding-right: 100px;
+}
+
+.left-row .one {
+    display: flex;
+    gap: 200px;
+}
+
+.left-row .two {
+    display: flex;
+    gap: 130px;
+}
+
+.right-row .one {
+    display: flex;
+    gap: 200px;
+}
+
+.right-row .two {
+    display: flex;
+    gap: 215px;
+}
+
+
+.export {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: end;
+    margin-top: 30px;
+}
+
+.export button {
+    width: 150px;
+    margin-top: -15px;
+    margin-right: 20px;
+    background-color: #233874;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+
+table{
+    margin: 20px auto;
+}
 table th {
     text-align: center;
     padding: 10px 0px;
 }
-table tr{
-    border-bottom: #000 solid 1px;
-}
 table td {
-    width: 250px;
     text-align: center;
     padding-top: 10px;
-}
-
-table td img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-}
-
-#label-order {
-    background-color: #5874af;
-    width: 75px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 7px;
-    color: white;
-}
-
-footer {
-    display: flex;
-    justify-content: end;
-    padding-right: 50px;
-    align-items: center;
-    background-color: #1C3879;
     height: 50px;
-    color: rgba(255, 255, 255, 0.508);
-    position: relative;
-    bottom: 0;
+    padding: 5px;
+    width: 220px;
+    height: 60px;
+}   
+table tr:first-child{
+
 }
-
-
-/* modal */
-.modalreview,
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 5;
-  padding-top: 2vh;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modalreview-content,
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 10px;
-  border: 1px solid #888;
-  width: 800px;
-  height: 700px;
-}
-.modalreview-content
-.modal-content .product {
-  margin: auto 0px;
-}
-
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.header p {
-  font-family: 'Poppins';
-  font-weight: 600;
-  font-size: 30px;
-  color: #000000;
-  width: fit-content;
-  margin: 0% auto;
-}
-
-.main-modal {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.modal-product img {
-  width: 700px;
-  height: 500px;
-  object-fit: cover;
-}
-
-.other-modal {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  gap: 20px;
-}
-
-.other-modal img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  cursor: pointer;
-}
-
-.main-modal button {
-  background-color: transparent;
-  border: none;
-}
-
-.main-modal button i {
-  font-size: 50px;
-}
-
-.review-modal {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.cust-rev{
-  font-size: 20px;
-  font-weight: 700;
-  margin: 10px;
-  letter-spacing: 1px;
-}
-
-
-.scrollbar
-{
-	float: left;
-  height: 620px;
-	overflow-y: scroll;
-}
-
-.force-overflow
-{
-	min-height: 450px;
-}
-
-#wrapper
-{
-	text-align: center;
-	margin: auto;
-}
-
-
-#style-3::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
-}
-
-#style-3::-webkit-scrollbar
-{
-	width: 6px;
-	background-color: #F5F5F5;
-}
-
-#style-3::-webkit-scrollbar-thumb
-{
-	background-color: #000000;
-}
-
-
-.comment-modal{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 700px;
-  height: 100px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 2px 2px 10px rgba(104, 104, 104, 0.227);
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px;
+table tr{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
