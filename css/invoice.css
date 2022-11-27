@@ -274,6 +274,27 @@ nav {
     color: #000;
 }
 
+
+
+.export {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: end;
+    margin-top: 30px;
+}
+
+.export button {
+    width: 150px;
+    margin-top: -15px;
+    margin-right: 35px;
+    background-color: #233874;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+
 .invoice-content {
     width: 950px;
     height: 730px;
@@ -283,6 +304,7 @@ nav {
     -moz-box-shadow: -1px 2px 16px -1px rgba(0, 0, 0, 0.094);
     margin-left: 25px;
     padding: 25px 50px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
