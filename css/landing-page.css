@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+
 }
 
 a {
@@ -208,6 +209,7 @@ background: linear-gradient(180deg, rgba(89,117,176,0.1) 29%, rgba(10,11,66,0) 1
 
 .bg-tio img, .bg-bian img{
   width: 700px;
+  overflow-y: hidden;
 }
 
 .middle-row {
