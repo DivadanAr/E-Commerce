@@ -371,10 +371,14 @@ nav {
     border: 1px solid black;
     padding: 3px 17px;
 }
+.left-row li:nth-child(2){
+
+    background-color: #233874;
+}
 .left-row li:first-child{
     border-start-start-radius: 10px;
     border-end-start-radius: 10px;
-    background-color: #233874;
+
 }
 .left-row li a{
     text-decoration: none;
@@ -466,55 +470,6 @@ table td{
   margin: 10px;
   gap: 8px;
 }
-
-.status-done{
-  background-color: white;
-  border: 0.4px solid rgba(0, 0, 0, 0.462);
-  width: fit-content;
-  padding: 3px 5px;
-  width: 110px;
-  font-size: 15px;
-  display: flex;
-  justify-content: center;
-  border-radius: 8px;
-  color: rgba(0, 0, 0, 0.716);
-  align-items: center;
-  margin: 10px;
-  gap: 5px;
-}
-
-.status-canceled{
-  background-color: rgba(195, 43, 43, 0.914);
-  width: fit-content;
-  padding: 3px 5px;
-  width: 110px;
-  font-size: 15px;
-  display: flex;
-  justify-content: center;
-  border-radius: 8px;
-  color: white;
-  align-items: center;
-  margin: 10px;
-  gap: 5px;
-}
-
-.status-refund{
-  background-color: #F3F4F8;
-  width: fit-content;
-  padding: 3px 5px;
-  width: 110px;
-  font-size: 15px;
-  display: flex;
-  justify-content: center;
-  border-radius: 8px;
-  color: #838C98;
-  align-items: center;
-  margin: 10px;
-  gap: 5px;
-}
-
-
-
 
 td a{
     text-decoration: none;
