@@ -347,7 +347,7 @@ nav {
 }
 
 .content-order{
-    margin: 140px 70px;
+    margin: 130px 70px;
 }
 
 .content-order h1{
@@ -359,36 +359,32 @@ nav {
     justify-content: space-between;
     margin: 20px 0px;
 }
-.menus .left-row{
-    display: flex;
-    gap: 35px;
+.head{
+  display: flex;
+  justify-content: space-between;
 }
-.left-row .one{
-    font-weight: 600;
-    line-height: 10px;
-}
-.two ul{
+.left-row ul{
     display: flex;
     list-style: none;
 }
-.two li{
+.left-row li{
     border: 1px solid black;
     padding: 3px 17px;
 }
-.two li:first-child{
+.left-row li:first-child{
     border-start-start-radius: 10px;
     border-end-start-radius: 10px;
     background-color: #233874;
 }
-.two li a{
+.left-row li a{
     text-decoration: none;
 color: #000000;
 font-weight: 700;
 }
-.two li a:first-child{
+.left-row li a:first-child{
     color: black;
 }
-.two li:last-child{
+.left-row li:last-child{
     border-end-end-radius: 10px;
     border-start-end-radius: 10px;
 }
@@ -397,7 +393,7 @@ font-weight: 700;
     padding: 0px 5px;
 }
 table{
-    margin-left: 290px;
+    margin: auto;
 }
 table th{
     text-align: center;
