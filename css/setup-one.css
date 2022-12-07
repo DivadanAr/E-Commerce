@@ -1,0 +1,44 @@
+
+.sidebar{
+    width: 450px;
+    height: 748.5px;
+    display: flex;
+    flex-direction: column;
+    padding: 34px 50px;
+    background-color: antiquewhite;
+}
+.sidebar .logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.sidebar .logo img{
+    width: 100px;
+}
+.sidebar .logo p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.breadcrumbs{
+    line-height: 55px;
+
+}
+.breadcrumbs .one, .two, .three{
+    display: flex;
+    font-size: 25px;
+    gap: 10px;
+}
+.one p{
+    margin-top: -10px;
+}
+.two p{
+    margin-top: -10px;
+}
+.three p{
+    margin-top: -10px;
+}
+.dekor img{
+    width: 300px;
+}
