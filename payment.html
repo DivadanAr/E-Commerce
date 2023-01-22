@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/payment.css">
+    <title>Document</title>
+
+    
+</head>
+<body>
+    <div class="titles">
+        <h1>Payment</h1>
+    </div>
+    <div class="pm-deadline-status">
+        <h2>Payment Deadline</h2>
+        <p>Sunday, 14 May 2022</p>
+        <h2>Status</h2>
+        <p>Unpaid</p>
+    </div>
+    
+    <div class="bcasvirt">
+        <div class="bca-virt">
+            <div class="row1">
+                <p>Bca Virtual Account</p>
+                <img src="assets/bca-virtual.png" alt="">
+            </div>
+            <div class="row2">
+                <div class="left">
+                    <p>BCA Virtual Account</p>
+                    <p id="sample">807742198412313</p>
+                </div>
+                <div class="right">
+                    <button onclick="CopyToClipboard('sample');return false;">
+                        <iconify-icon icon="material-symbols:content-copy-outline"></iconify-icon>
+                        Copy</button>
+                </div>
+            <div class="row3">
+                <div class="left">
+                    <p>Total Payment</p>
+                    <p id="simple">Rp. 100.000
+                        <button onclick="CopyToClipboards('simple');return false;">
+                            <iconify-icon icon="material-symbols:content-copy-outline" style="font-size:18px;"></iconify-icon></button>
+                </div>
+                <div class="right">
+                    <a href="">Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 
+    <div class="pib">
+        <h2>Payment Internet Banking</h2>
+    </div> -->
+
+
+    <script>
+        function CopyToClipboard(id)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(id));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        }
+
+        function CopyToClipboards(id)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(id));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        }
+        </script>
+        <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+</body>
+</html>
+
