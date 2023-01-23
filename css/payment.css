@@ -20,7 +20,7 @@ body{
     letter-spacing: 2px;
 }
 .bcasvirt{
-    border-bottom: 1px solid black;
+
 }
 .bca-virt{
     width: 500px;
@@ -82,5 +82,83 @@ body{
     margin-left: 5px;
 }
 .pib{
-    margin-top: 1px solid black;
+    max-width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.56);
+    padding-bottom: 20px;
+}
+.pib .contents{
+    position: relative;
+}
+.pib .contents .label{
+    position: relative;
+    border-top: 1px solid black;
+    padding-top: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.pib .contents .label::before{
+    content: "+";
+    position: absolute;
+    top: 80%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.pib .contents.contents.active .label::before{
+    content: "-";
+}
+
+.pib .contents .conteen{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5;
+    overflow-y: auto;
+}
+
+.pib .contents.active .conteen{
+    height: 130px;
+    padding: 20px;
+}
+
+
+.bni{
+    max-width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.56);
+    padding-bottom: 20px;
+}
+.bni .contents{
+    position: relative;
+}
+.bni .contents .label{
+    position: relative;
+    padding-top: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.bni .contents .label::before{
+    content: "+";
+    position: absolute;
+    top: 80%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.bni .contents.contents.active .label::before{
+    content: "-";
+}
+
+.bni .contents .conteen{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5;
+    overflow-y: auto;
+}
+
+.bni .contents.active .conteen{
+    height: 130px;
+    padding: 20px;
 }

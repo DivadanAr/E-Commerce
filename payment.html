@@ -49,11 +49,57 @@
             </div>
         </div>
     </div>
-<!-- 
-    <div class="pib">
-        <h2>Payment Internet Banking</h2>
-    </div> -->
 
+    <div class="pib">
+        <div class="contents">
+            <div class="label">Payment Internet Banking</div>
+            <div class="conteen">
+                <ul>
+                    <li>
+                        1. Pilih m-Transfer > BCA Virtual Account.
+                    </li>
+                    <li>
+                        2.  Masukkan nomor Virtual Account 126 085947382121 dan pilih Send.
+                    </li>
+                    <li>
+                        3.  Periksa informasi yang tertera di layar. Pastikan Merchant adalah Shopee, Total tagihan sudah benar dan            username kamu farhan_aziz0. Jika benar pilih Ya.
+                    </li>
+                    <li>
+                        4.  Masukkan PIN m-BCA Anda dan pilih OK.
+                    </li>
+                    <li>
+                        5.  Jika muncul notifikasi “Transaksi Gagal. Nominal melebihi limit harian”, mohon ulangi transaksi menggunakan KlikBCA (iBanking) atau ATM.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="bni">
+        <div class="contents">
+            <div class="label">Payment ATM BNI</div>
+            <div class="conteen">
+                <ul>
+                    <li>
+                        1. Pilih m-Transfer > BCA Virtual Account.
+                    </li>
+                    <li>
+                        2.  Masukkan nomor Virtual Account 126 085947382121 dan pilih Send.
+                    </li>
+                    <li>
+                        3.  Periksa informasi yang tertera di layar. Pastikan Merchant adalah Shopee, Total tagihan sudah benar dan            username kamu farhan_aziz0. Jika benar pilih Ya.
+                    </li>
+                    <li>
+                        4.  Masukkan PIN m-BCA Anda dan pilih OK.
+                    </li>
+                    <li>
+                        5.  Jika muncul notifikasi “Transaksi Gagal. Nominal melebihi limit harian”, mohon ulangi transaksi menggunakan KlikBCA (iBanking) atau ATM.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <script>
         function CopyToClipboard(id)
@@ -74,6 +120,16 @@
         window.getSelection().addRange(r);
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
+        }
+
+        //pib
+
+        const pib = document.getElementsByClassName('contents');
+
+        for(i = 0; i<pib.length; i++){
+            pib[i].addEventListener('click', function(){
+                this.classList.toggle('active')
+            })
         }
         </script>
         <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
